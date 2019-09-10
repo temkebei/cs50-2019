@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+
+       {% for x in data%}
+       <div class="card text-white bg-info mb-2 mx-auto shadow-lg">
+       <div class="card-header">{{x.symbol}} - {{x.name}}</div>
+       <div class="card-body">
+       <p class="card-text">{{x.shares}} * {{x.price}} = {{x.total}}</p>
+       </div>
+       </div>
+       {%endfor%}
+
+
+
+       <div class="card text-white bg-danger mb-2 mx-auto  shadow-lg" >
+       <div class="card-header">Cash</div>
+       <div class="card-body">
+       <p class="card-text">{{cash}}</p>
+       </div>
+       </div>
+
+       <div class="card text-white bg-dark mb-2 mx-auto  shadow-lg" >
+       <div class="card-header">Total</div>
+       <div class="card-body">
+       <p class="card-text">{{total}}</p>
+       </div>
+       </div>
+
+
+
+
+{% endblock %}

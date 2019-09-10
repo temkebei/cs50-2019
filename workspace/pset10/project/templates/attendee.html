@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+   <HEAD>
+      <TITLE>See Who Else is Going!</TITLE>
+   </HEAD>
+   <BODY>
+
+   <table class="table table-hover table-dark">
+        <thead>
+            <th>Event Name</th>
+            <th>Location/Date & Time</th>
+            <th>Contact Info</th>
+            <th>Name of Attendee</th>
+            <th>Additional Information</th>
+        </thead>
+        <tbody>
+        {% for x in events %}
+        <tr>
+            <td>{{x.event_name}}</td>
+            <td>{{x.location}}</td>
+            <td>{{x.contact}}</td>
+            <td>{{x.yourname}}</td>
+            <td>{{x.other_info}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <!--<h3><font color="#006dcc"><b>Add Event to Your Calendar</b></font></h3>-->
+    <a href="http://www.google.com/calendar/event?
+    action=TEMPLATE
+    &text=[event-title]
+    &dates=[start-custom format='Ymd\\THi00\\Z']/[end-custom format='Ymd\\THi00\\Z']
+    &details=[description]
+    &location=[location]
+    &trp=false
+    &sprop=
+    &sprop=name:"
+    target="_blank" rel="nofollow"><h3><font color="#006dcc"><b>Add to my calendar</b></font></h3></a>
+
+   </BODY>
+
+{% endblock %}

@@ -1,0 +1,116 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 30px;
+  color: #777;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-image: url("5.png");
+  /*background-size: 100%;*/
+}
+
+/* general */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* header */
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+nav {
+  float: center;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 5px;
+  margin-left: 5px;
+  line-height: 10px;
+  color: #999;
+  text-decoration: none;
+  border-left: 3px solid red;
+}
+
+.rideshare
+{
+    background-image: url("rideshare.jpg");
+    background-size: 72%;
+
+      border: 10px solid gray;
+}
+
+.add {
+  /*background-image: url("8.png");*/
+    /*background-size: 1000px;*/
+
+
+}
+.sign {
+    /*background-image: url("eventsb.jpg");*/
+    /*background-size: 100%;*/
+}
