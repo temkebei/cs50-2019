@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="container">
+        <hr>
+    <div class="col">
+        <form action="/compare" enctype="multipart/form-data" method="post">
+
+            <!-- TODO -->
+
+        <div class="input-file">
+                <!--browser to the file1 -->
+                <input type="file" class="file-input" name="file1">
+            </div>
+            <div class="input-file">
+                <!--browser to the file2 -->
+                <input type="file" class="file-input" name="file2">
+            </div>
+            <div class="files-compare">
+                <input type="radio" class="check-input" name="algorithm" value="lines">
+                Compare lines
+            </div>
+            <div class="files-compare">
+                <input type="radio" class="check-input" name="algorithm" value="sentences">
+                Compare sentences
+            </div>
+            <div class="files-compare">
+                <input type="radio" class="check-input" name="algorithm" value="substrings">
+                Compare substrings
+                <input type="number" class="check-input" name="length" placeholder="length of substrings">
+            </div>
+           <button class="btn btn-primary" type="submit">Compare</button>
+
+            <!--End of TODO-->
+            <hr>
+        </form>
+            <div class="card">
+  <h5 class="card-header" text-align-center>by Frankline Kebei</h5>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="https://github.com/temkebei" class="btn btn-primary">My GitHub</a>
+  </div>
+</div>
+
+    </div>
+    </div>
+
+{% endblock %}

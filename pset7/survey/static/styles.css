@@ -1,0 +1,16 @@
+/* TODO */
+.form-control {
+    display: inline-block;
+    width: auto;
+}
+
+.error {
+    color: red;
+    font-size: 11px;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+}

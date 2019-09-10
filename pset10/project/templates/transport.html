@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Get a Ride
+{% endblock %}
+
+{% block main %}
+<body class="rideshare">
+<br>
+    <form action="/transport" method="post">
+        <a href="https://www.lyft.com/login">
+          <h3  class="btn btn-light"><font color="#ea0b8b"><b>Request Lyft</b></font></h3>
+
+            <img src = "https://pbs.twimg.com/profile_images/1063591416918552576/lg72DZIS_200x200.jpg" alt = "Lyft" class="img-thumbnail">
+        </a>
+    </form>
+    <br>
+    <br>
+    <form action="/transport" method="post">
+        <a href="https://www.uber.com/sign-in">
+          <h3  class="btn btn-dark"><font color="whitesmoke"><b>Request Uber</b></font></h3>
+            <img src = "https://pbs.twimg.com/profile_images/697918062138433536/YpWQjGdP_200x200.png" alt = "Uber" class="img-thumbnail">
+        </a>
+    </form>
+</body>
+{% endblock %}
+

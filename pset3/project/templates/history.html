@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+
+    <table class="table" >
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Shares</th>
+      <th scope="col">Price</th>
+      <th scope="col">Transacted</th>
+    </tr>
+  </thead>
+  <tbody>
+
+        {% for x in data%}
+
+            {% if x.action == 'b' %}
+                 <tr class="table-success">
+            {% else %}
+                <tr class="table-danger">
+            {% endif %}
+
+
+            <th scope="row">{{x.symbol}}</th>
+            <td>{{x.share}}</td>
+            <td>{{x.price}}</td>
+            <td>{{x.timestamp}}</td>
+            </tr>
+       {%endfor%}
+
+
+  </tbody>
+</table>
+{% endblock %}
